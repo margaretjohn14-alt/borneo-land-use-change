@@ -14,7 +14,7 @@ Detecting deforestation and land use change in East Kalimantan, Borneo, Indonesi
    - Landsat 8 used for 2017 because Sentinel-2 coverage over Borneo was incomplete in early years (launched June 2015, sparse tropical coverage before 2019)
    - Sentinel-2 used for 2023 for higher spatial resolution (10m vs 30m) and denser revisit frequency
    - Both sensors provide comparable surface reflectance products suitable for NDVI computation2. 
-2. **Cloud masking:** QA60 band — removes cloud and cirrus pixels
+2. **Cloud masking:** QA_PIXEL band (Landsat 8) and QA60 band (Sentinel-2)
 3. **Compositing:** Annual median composite to produce one clean, cloud-free image per year
 4. **NDVI computation:** (NIR - Red) / (NIR + Red)
    - Landsat 8: SR_B5 (NIR) and SR_B4 (Red)
